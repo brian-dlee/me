@@ -1,0 +1,54 @@
+.Career {
+  margin-top: 3em;
+  padding: 1em;
+  display: grid;
+  grid-template-areas: 'menu-left profile menu-right' 'content content content';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.Career .Profile {
+  grid-area: profile;
+}
+
+.Career .MenuLeft {
+  grid-area: menu-left;
+}
+
+.Career .MenuRight {
+  grid-area: menu-right;
+}
+
+.Career .Timeline {
+  grid-area: content;
+}
+
+.Timeline-entry {
+  margin-bottom: 1.5rem;
+}
+
+.Timeline-entry .headline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Timeline-entry .title * {
+  vertical-align: middle;
+}
+
+.Timeline-entry .summary {
+  color: #575e5e;
+  font-size: 0.95rem;
+  padding-top: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Timeline-entry .Icon {
+  margin-right: 0.25rem;
+}
+
+.Timeline-entry .date {
+  display: flex;
+  justify-self: end;
+}
