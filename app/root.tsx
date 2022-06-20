@@ -8,13 +8,12 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import * as React from "react";
-import Container from "~/components/Container";
 import Icon from "~/components/Icon";
 import HeroPatternsLogo from "~/components/HeroPatternsLogo";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Brian Lee - Software Engineer",
   viewport: "width=device-width,initial-scale=1",
 });
 
