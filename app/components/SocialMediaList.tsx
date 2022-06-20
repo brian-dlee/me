@@ -44,7 +44,7 @@ export default function SocialMediaList(): JSX.Element {
           <span className="SocialMediaList-entry">
             <a href={url} rel="noreferrer" target="_blank">
               <Icon name={icon} />
-              <span>{text}</span>
+              <span className="label">{text}</span>
             </a>
           </span>
           {i < items.length - 1 ? <span className="SocialMediaList-entry separator">·</span> : null}

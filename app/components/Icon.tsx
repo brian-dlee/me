@@ -4,6 +4,7 @@ import classNames from "classnames";
 interface Props {
   className?: string;
   name: string;
+  alt?: string;
   style?: CSSProperties;
   size?: string;
 }
@@ -14,7 +15,7 @@ export default function Icon(props: Props) {
   return (
     // @ts-ignore
     <IonIcon
-      class={classNames("Icon", props.className)} style={props.style} name={props.name}
+      class={classNames("Icon", props.className)} style={props.style} name={props.name} alt={props.alt}
     />
   )
 }

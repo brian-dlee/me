@@ -10,6 +10,7 @@ import {
 import * as React from "react";
 import Container from "~/components/Container";
 import Icon from "~/components/Icon";
+import HeroPatternsLogo from "~/components/HeroPatternsLogo";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -26,18 +27,29 @@ export default function App() {
       </head>
       <body>
         <Outlet />
-        <Container className="App-footer">
+        <div className="App-footer">
           <div className="App-footer-powered-by">
             <a href="https://deno.com/deploy">
-              <img alt="Deno" src="https://dash.deno.com/assets/logo.svg" />
-              <span>Deno Deploy</span>
+              <img alt="Deno" src="https://dash.deno.com/assets/logo.svg" className="logo" />
+              <span className="label">Deno Deploy</span>
             </a>
+            <span className="separator">|</span>
             <a href="https://remix.run/">
-              <img alt="Remix" src="/assets/images/remix-dark-logo.png" />
-              <span>Remix</span>
+              <img alt="Remix" src="/assets/images/remix-dark-logo.png" className="logo" />
+              <span className="label">Remix</span>
+            </a>
+            <span className="separator">|</span>
+            <a href="https://ionic.io/ionicons">
+              <Icon alt="ionic" name="logo-ionic" className="logo" />
+              <span className="label">ionicons</span>
+            </a>
+            <span className="separator">|</span>
+            <a href="https://heropatterns.com/">
+              <HeroPatternsLogo className="logo" />
+              <span className="label">Hero Patterns</span>
             </a>
           </div>
-        </Container>
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
