@@ -3,7 +3,7 @@ import moment from "moment";
 const YEAR_IN_MS = 365 * 24 * 60 * 60 * 1000;
 
 export function isOlderThanOneYear(date: Date): boolean {
-  return date.valueOf() > YEAR_IN_MS
+  return date.valueOf() > YEAR_IN_MS;
 }
 
 export function formatDate(date: Date): string {

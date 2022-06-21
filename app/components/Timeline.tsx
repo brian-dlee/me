@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "@remix-run/react";
 import classNames from "classnames";
 import Icon from "~/components/Icon";
-import {formatMonthRange} from "~/utils/date";
+import { formatMonthRange } from "~/utils/date";
 
 interface Entry {
   start?: Date;
