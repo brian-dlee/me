@@ -1,44 +1,6 @@
-.Home {
+.Home.Main {
   margin-top: 3em;
   padding: 1em;
-  display: grid;
-  grid-template-areas: 'menu-left profile menu-right' 'social social social' 'info info info' 'timeline timeline timeline';
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-}
-
-.Home .Profile {
-  grid-area: profile;
-}
-
-.Home .MenuLeft {
-  grid-area: menu-left;
-}
-
-.Home .MenuRight {
-  grid-area: menu-right;
-}
-
-.Home .InfoCard {
-  grid-area: info;
-}
-
-.Home .Timeline {
-  grid-area: timeline;
-}
-
-.Profile {
-  text-align: center;
-}
-
-.Profile h1 {
-  font-family: 'Libre Barcode 39 Text', cursive;
-}
-
-.Profile .image img {
-  border-radius: 50%;
-  width: 10rem;
-  height: auto;
 }
 
 .Home .SocialMediaList {

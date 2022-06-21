@@ -67,43 +67,65 @@ code {
   margin: auto;
 }
 
-.Profile {
-  text-align: center;
+.Main {
+  margin-top: 3em;
+  padding: 1em;
 }
 
-.Profile-header {
+.Lead {
+  display: grid;
+  grid-template-areas: 'menu-left lead menu-right';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.Lead .header {
   font-size: 2rem;
   font-family: 'Libre Barcode 39 Text', cursive;
   margin-bottom: 1rem;
 }
 
-.Profile-sub-header {
-  font-size: 2rem;
-  font-family: 'DotGothic16', cursive;
+.Lead .center {
+  text-align: center;
+  grid-area: lead;
 }
 
-.Profile .image img {
+.Lead .SiteNav.left {
+  grid-area: menu-left;
+}
+
+.Lead .SiteNav.right {
+  grid-area: menu-right;
+}
+
+.Lead .image img {
   border-radius: 50%;
   width: 10rem;
   height: auto;
 }
 
-.AppMenu {
+.SiteNav {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
-.AppMenu * {
+.SiteNav * {
   vertical-align: middle;
 }
 
-.AppMenu a {
+.SiteNav a {
   font-family: 'DotGothic16', sans-serif;
   text-transform: uppercase;
 }
 
-.App-footer {
+.Title .main {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'DotGothic16', cursive;
+}
+
+.Footer {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   position: absolute;
@@ -113,38 +135,38 @@ code {
   background: rgba(255, 255, 255, 0.65);
 }
 
-.App-footer-powered-by {
+.Footer .powered-by {
   margin: auto;
 }
 
-.App-footer-powered-by .separator {
+.Footer .powered-by .separator {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
 
-.App-footer-powered-by > * {
+.Footer .powered-by > * {
   margin: auto;
 }
 
-.App-footer-powered-by a {
+.Footer .powered-by a {
   text-decoration: none;
   color: black;
 }
 
-.App-footer-powered-by * {
+.Footer .powered-by * {
  vertical-align: middle;
  font-family: 'DotGothic16', sans-serif;
  font-size: 0.95rem;
 }
 
-.App-footer-powered-by .logo:not(ion-icon) {
+.Footer .powered-by .logo:not(ion-icon) {
   width: 1rem;
   height: auto;
   margin-right: 5px;
 }
 
 @media only screen and (max-width: 480px) {
-  .App-footer-powered-by .label {
+  .Footer .powered-by .label {
     display: none;
   }
 }

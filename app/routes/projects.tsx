@@ -4,7 +4,7 @@ import Container from "../components/Container";
 import globalCss from "~/styles/global.css"
 import projectsCss from "~/styles/projects.css"
 import Icon from "~/components/Icon";
-import Profile from "~/components/Profile";
+import Lead from "~/components/Lead";
 
 export const links: LinksFunction = () => [
   { href: globalCss, rel: "stylesheet" },
@@ -13,14 +13,12 @@ export const links: LinksFunction = () => [
 
 export default function Projects() {
   return (
-    <Container className="Projects">
-      <Profile title="Projects" />
-      <div className="AppMenu MenuLeft">
-        <a href="/"><Icon name="chevron-back" /><span>Home</span></a>
-      </div>
-      <div className="AppMenu MenuRight">
-        <a href="/career"><span>Career</span></a>
-      </div>
+    <Container className="Main Projects">
+      <Lead
+        title="Projects"
+        left={{ path: "/", title: <><Icon name="chevron-back" /><span>Home</span></> }}
+        right={{ path: "/career", title: "Career" }}
+      />
     </Container>
   );
 }

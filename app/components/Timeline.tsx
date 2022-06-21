@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "@remix-run/react"
 import classNames from "classnames";
 import moment from "moment"
 import Icon from "~/components/Icon";
@@ -44,7 +45,7 @@ export default function Timeline({ className, entries }: Props): JSX.Element {
             <div className="headline">
               <div className="title">
                 {icon && <Icon name={icon} />}
-                <a href={path}>{title}</a>
+                <Link prefetch="intent" to={path}>{title}</Link>
               </div>
               <div className="date">{formatDateLabel(start, end)}</div>
             </div>
