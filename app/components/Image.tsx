@@ -1,4 +1,4 @@
-import React, {ReactNode} from "react"
+import React, { ReactNode } from "react";
 import classNames from "classnames";
 
 interface Props {
@@ -15,5 +15,5 @@ export default function Image(props: Props): JSX.Element {
     <div className={classNames("image", props.className)}>
       <img src={props.src} alt={props.alt} />
     </div>
-  )
+  );
 }

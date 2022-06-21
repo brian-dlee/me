@@ -7,12 +7,20 @@ export default function Footer() {
     <footer className="Footer">
       <div className="powered-by">
         <a href="https://deno.com/deploy">
-          <img alt="Deno" src="https://dash.deno.com/assets/logo.svg" className="logo" />
+          <img
+            alt="Deno"
+            src="https://dash.deno.com/assets/logo.svg"
+            className="logo"
+          />
           <span className="label">Deno Deploy</span>
         </a>
         <span className="separator">|</span>
         <a href="https://remix.run/">
-          <img alt="Remix" src="/assets/images/remix-dark-logo.png" className="logo" />
+          <img
+            alt="Remix"
+            src="/assets/images/remix-dark-logo.png"
+            className="logo"
+          />
           <span className="label">Remix</span>
         </a>
         <span className="separator">|</span>
@@ -27,5 +35,5 @@ export default function Footer() {
         </a>
       </div>
     </footer>
-  )
+  );
 }

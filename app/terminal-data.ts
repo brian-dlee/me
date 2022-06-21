@@ -6,7 +6,7 @@ const data = {
       text:
         "This site is written in React. Most of it is built by applying styles over Semantic UI's " +
         "React components, but this Terminal required a fairly intricate implementation.",
-      url: "https://github.com/brian-dlee/personal-website"
+      url: "https://github.com/brian-dlee/personal-website",
     },
     Radux: {
       starred: true,
@@ -20,17 +20,16 @@ const data = {
         "syntax), and multi-store management.\nRecently, I've moved away from this project and have switched " +
         "to a pattern similar to the ducks pattern for Redux configuration. That pattern is used on my personal " +
         "site.",
-      url: "https://www.npmjs.com/package/radux"
-    }
+      url: "https://www.npmjs.com/package/radux",
+    },
   },
   "Closed source projects": {
     Cargo: {
       lang: ["Javascript (es6/React)"],
-      text:
-        "An inventory management system completely written in React as " +
+      text: "An inventory management system completely written in React as " +
         "a progressive web app for a private client.\nThe app uses firebase for " +
         "authentication, photo storage, and as a realtime database. The source code for " +
-        "this project is closed."
+        "this project is closed.",
     },
     "iOS Inventory Manager": {
       starred: true,
@@ -41,14 +40,14 @@ const data = {
         "app I've written in React Native.\nIt had some eye opening experiences, but " +
         "once I got started I didn't find React Native development to be much " +
         "different than React and I found it to be a great learning experience and " +
-        "entry point into React Native. The source code for this project is closed."
+        "entry point into React Native. The source code for this project is closed.",
     },
     GymMe: {
       lang: ["Javascript (es6/React)"],
       text:
         "A workout generation app. This app is a progressive web app written in React " +
         "and using a firebase backend. This app was under development at Orion Network " +
-        "Solutions.\nThe source code for this project is closed."
+        "Solutions.\nThe source code for this project is closed.",
     },
     "dicedkitchen.com": {
       starred: true,
@@ -58,7 +57,7 @@ const data = {
         "Wordpress. I basically customized the theme, created the logo and configured the site to meet " +
         "the client's needs.\nCompleting this project also including writing a custom Wordpress plugin " +
         "to deliver customer reports.",
-      url: "https://dicedkitchen.com"
+      url: "https://dicedkitchen.com",
     },
     "water.noaa.gov": {
       lang: ["PHP (Symfony)", "Python 2", "Javascript (jQuery/Dojo)"],
@@ -75,7 +74,7 @@ const data = {
         "is National Water Model output containing forecast data on 2.7 million streams across the entire " +
         "nation. The processing of that output required very extensive optimization to run in " +
         "a timely manner.",
-      url: "http://water.noaa.gov"
+      url: "http://water.noaa.gov",
     },
     "water.weather.gov": {
       lang: ["PHP", "Perl", "Python", "C++", "Javascript (jQuery)"],
@@ -86,8 +85,8 @@ const data = {
         "and the importance of good software development. As this was the first app I " +
         "worked on, I learned a lot, but probably the most valuable takeaway is how " +
         "important organization is in a large application. Without organization, literally " +
-        "everything is vastly more difficult than it needs to be."
-    }
+        "everything is vastly more difficult than it needs to be.",
+    },
   },
   Interests: {
     AI: {
@@ -96,16 +95,16 @@ const data = {
         "Although this has always been a field that has intrigued me, my interests grew during the CS " +
         "program at UNLV when I took an elective on AI. AI has already proven to be an incredible " +
         "technology changing the pace of software today. This is one field I've had my eyes on for a while and " +
-        "I would love the opportunity to be more involved in."
+        "I would love the opportunity to be more involved in.",
     },
     "Game Development": {
       starred: true,
       text:
         "Games have always been a passion of mine. In my free time, I've been gaining more experience in " +
         "game development and design. My experience is primarily with Unity but I've also had my eyes on " +
-        "developing games using the Unreal Engine and even plain Javascript/WebGL."
-    }
-  }
+        "developing games using the Unreal Engine and even plain Javascript/WebGL.",
+    },
+  },
 };
 
-export default data
+export default data;

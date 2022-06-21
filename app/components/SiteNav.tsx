@@ -13,5 +13,5 @@ export default function SiteNav({ className, path, title }: Props) {
     <div className={classNames("SiteNav", className)}>
       <Link prefetch={"intent"} to={path}>{title}</Link>
     </div>
-  )
+  );
 }

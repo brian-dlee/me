@@ -1,4 +1,4 @@
-import React, {CSSProperties, ReactNode} from "react"
+import React, { CSSProperties, ReactNode } from "react";
 import classNames from "classnames";
 
 interface Props {
@@ -18,7 +18,7 @@ function List(props: ListProps): JSX.Element {
     <div className={classNames("List", props.className)}>
       {props.children}
     </div>
-  )
+  );
 }
 
 interface ItemProps extends Props {
@@ -30,9 +30,9 @@ function Item(props: ItemProps): JSX.Element {
     <div className={classNames("ListItem", props.className)}>
       {props.children}
     </div>
-  )
+  );
 }
 
-List.Item = Item
+List.Item = Item;
 
-export default List
+export default List;

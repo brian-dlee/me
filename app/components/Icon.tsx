@@ -1,4 +1,4 @@
-import React, {CSSProperties} from "react"
+import React, { CSSProperties } from "react";
 import classNames from "classnames";
 
 interface Props {
@@ -9,13 +9,16 @@ interface Props {
   size?: string;
 }
 
-const IonIcon = "ion-icon"
+const IonIcon = "ion-icon";
 
 export default function Icon(props: Props) {
   return (
-    // @ts-ignore
+    // @ts-ignore The ion-icon element is not official
     <IonIcon
-      class={classNames("Icon", props.className)} style={props.style} name={props.name} alt={props.alt}
+      class={classNames("Icon", props.className)}
+      style={props.style}
+      name={props.name}
+      alt={props.alt}
     />
-  )
+  );
 }

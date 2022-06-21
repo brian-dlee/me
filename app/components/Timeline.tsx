@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "@remix-run/react"
+import { Link } from "@remix-run/react";
 import classNames from "classnames";
-import moment from "moment"
 import Icon from "~/components/Icon";
+import {formatMonthRange} from "~/utils/date";
 
 interface Entry {
   start?: Date;
@@ -18,24 +18,6 @@ interface Props {
   entries: Entry[];
 }
 
-const YEAR_IN_MS = 365 * 24 * 60 * 60 * 1000
-
-function formatDate(date: Date): string {
-  return moment(date).format("MMM YYYY")
-}
-
-function formatDateLabel(start?: Date, end?: Date): string {
-  if (start && end) {
-    return `${formatDate(start)} to ${formatDate(end)}`
-  } else if (start) {
-    return `${formatDate(start)} to present`
-  } else if (end) {
-    return formatDate(end)
-  } else {
-    return ""
-  }
-}
-
 export default function Timeline({ className, entries }: Props): JSX.Element {
   return (
     <div className={classNames("Timeline", className)}>
@@ -47,11 +29,9 @@ export default function Timeline({ className, entries }: Props): JSX.Element {
                 {icon && <Icon name={icon} />}
                 <Link prefetch="intent" to={path}>{title}</Link>
               </div>
-              <div className="date">{formatDateLabel(start, end)}</div>
+              <div className="date">{formatMonthRange(start, end)}</div>
             </div>
-            {text && (
-              <div className="summary">{text}</div>
-            )}
+            {text && <div className="summary">{text}</div>}
           </div>
         </React.Fragment>
       ))}

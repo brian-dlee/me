@@ -1,4 +1,4 @@
-import React, {ReactNode} from "react"
+import React, { ReactNode } from "react";
 import classNames from "classnames";
 
 interface Props {
@@ -11,5 +11,5 @@ export default function Container(props: Props) {
     <div className={classNames("container", props.className)}>
       {props.children}
     </div>
-  )
+  );
 }

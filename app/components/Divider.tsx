@@ -1,4 +1,4 @@
-import React, {ReactNode} from "react"
+import React, { ReactNode } from "react";
 
 interface Props {
   children?: ReactNode;
@@ -10,5 +10,5 @@ export default function Divider(props: Props) {
     <div>
       {props.children}
     </div>
-  )
+  );
 }

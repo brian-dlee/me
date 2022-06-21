@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../components/Image"
+import Image from "../components/Image";
 import classNames from "classnames";
 import SiteNav from "~/components/SiteNav";
 import Title from "~/components/Title";
@@ -33,15 +33,13 @@ const Lead = ({ className, title, avatar = false, left, right }: Props) => (
         />
       )}
     </div>
-    {left && (
-      <SiteNav className="left" path={left.path} title={left.title} />
-    )}
+    {left && <SiteNav className="left" path={left.path} title={left.title} />}
     {right && (
       <SiteNav className="right" path={right.path} title={right.title} />
     )}
   </div>
 );
 
-Lead.Title = Title
+Lead.Title = Title;
 
 export default Lead;
