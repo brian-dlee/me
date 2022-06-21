@@ -34,6 +34,9 @@ jobs:
         with:
           deno-version: v1.x
 
+      - name: NPM install
+        run: npm install
+
       - name: Verify formatting
         run: npm run format -- --check
 
