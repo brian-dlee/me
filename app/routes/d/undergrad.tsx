@@ -10,6 +10,9 @@ export default function Details() {
   return (
     <>
       <Title>B.S. in Computer Science, UNLV</Title>
+      <p>
+        In
+      </p>
     </>
   );
 }

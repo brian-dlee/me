@@ -15,6 +15,10 @@ body {
   position: relative;
 }
 
+* {
+  font-family: 'Advent Pro', sans-serif;
+}
+
 a {
   color: #446d6e;
   text-decoration: none;
@@ -24,8 +28,29 @@ a:visited {
   color: #575e5e;
 }
 
-* {
-  font-family: 'Advent Pro', sans-serif;
+a:hover {
+  color: #423c0d;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+a:hover:before {
+  content: "> ";
+}
+
+a:hover:after {
+  content: " _";
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
 }
 
 h1 {
@@ -69,7 +94,7 @@ code {
 
 .Main {
   margin-top: 3em;
-  padding: 1em;
+  padding: 1em 1em 5em;
 }
 
 .Lead {
@@ -132,7 +157,11 @@ code {
   bottom: 0;
   text-align: center;
   width: 100%;
-  background: rgba(255, 255, 255, 0.65);
+}
+
+.Footer a {
+  text-decoration: none;
+  color: black;
 }
 
 .Footer .powered-by {
@@ -148,21 +177,19 @@ code {
   margin: auto;
 }
 
-.Footer .powered-by a {
-  text-decoration: none;
-  color: black;
-}
-
-.Footer .powered-by * {
+.Footer * {
  vertical-align: middle;
  font-family: 'DotGothic16', sans-serif;
- font-size: 0.95rem;
+ font-size: 0.9rem;
 }
 
-.Footer .powered-by .logo:not(ion-icon) {
+.Footer .logo:not(ion-icon) {
   width: 1rem;
   height: auto;
-  margin-right: 5px;
+}
+
+.Footer .label:not(:first-child) {
+  margin-left: 5px;
 }
 
 @media only screen and (max-width: 480px) {

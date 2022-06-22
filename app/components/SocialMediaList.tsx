@@ -1,5 +1,4 @@
 import React from "react";
-import List from "./List";
 import Icon from "./Icon";
 
 interface Item {
@@ -29,16 +28,11 @@ const items: Item[] = [
     url: "https://gitlab.com/briandlee",
     text: "@briandlee",
   },
-  {
-    icon: "mail",
-    url: "mailto:briandl92391@gmail.com",
-    text: "briandl92391@gmail.com",
-  },
 ];
 
 export default function SocialMediaList(): JSX.Element {
   return (
-    <List className="SocialMediaList">
+    <div className="SocialMediaList">
       {items.map(({ icon, url, text }, i) => (
         <React.Fragment key={text}>
           <span className="SocialMediaList-entry">
@@ -52,6 +46,6 @@ export default function SocialMediaList(): JSX.Element {
             : null}
         </React.Fragment>
       ))}
-    </List>
+    </div>
   );
 }

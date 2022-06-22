@@ -4,12 +4,13 @@ import Container from "../components/Container";
 import globalCss from "~/styles/global.css";
 import careerCss from "~/styles/career.css";
 import Icon from "~/components/Icon";
-import Timeline from "~/components/Timeline";
+import Timeline, { css } from "~/components/Timeline";
 import Lead from "~/components/Lead";
 
 export const links: LinksFunction = () => [
   { href: globalCss, rel: "stylesheet" },
   { href: careerCss, rel: "stylesheet" },
+  ...css.map((href) => ({ href, rel: "stylesheet" })),
 ];
 
 export default function Career() {
@@ -29,13 +30,11 @@ export default function Career() {
       />
       <Lead.Title>Career</Lead.Title>
       <Timeline
-        className="App-body-timeline"
         entries={[
           {
             title: "Bachelors of Science for Computer Science at UNLV",
             text: "C, C++, Python, Java, Minor in Mathematics",
             icon: "school-outline",
-            path: "/d/undergrad",
             end: new Date("2013-12-02"),
           },
           {
@@ -43,7 +42,6 @@ export default function Career() {
             text:
               "PHP, Javascript, Python, Perl, C++: GeoSpatial/Meteorological data processing and consumer applications for the National Weather Service and NOAA",
             icon: "business-outline",
-            path: "/d/orion-network-solutions",
             start: new Date("2012-02-02"),
             end: new Date("2017-11-02"),
           },
@@ -52,7 +50,6 @@ export default function Career() {
             text:
               "React and Firebase, PWA: Introduce automation for processing physical items in a warehouse via an accessible web application",
             icon: "construct-outline",
-            path: "/d/cargo",
             start: new Date("2017-11-02"),
             end: new Date("2018-04-02"),
           },
@@ -61,7 +58,6 @@ export default function Career() {
             text:
               "Scala, C#, Unity, Swift, GoLang, Python, AWS: Train and integrate AI systems with realtime Audio/Video streaming at scale",
             icon: "business-outline",
-            path: "/d/ai-foundation",
             start: new Date("2018-02-02"),
             end: new Date("2021-05-02"),
           },
@@ -70,7 +66,6 @@ export default function Career() {
             text:
               "Typescript, Python, GoLang, GCP: Elevate business operations and design scalable, distributable e-commerce system from the ground up to meet a growing consumer demand and volume increase",
             icon: "business-outline",
-            path: "/d/nellis-auction",
             start: new Date("2021-05-02"),
           },
           {
@@ -78,7 +73,6 @@ export default function Career() {
             text:
               "Typescript, Python, Pulumi (IAC), AWS: Design a self-healing, auto-scaling network to run a variety of AI models to process extreme scales of digital media and determine authenticity",
             icon: "construct-outline",
-            path: "/d/reality-defender",
             start: new Date("2021-10-02"),
           },
         ]}
