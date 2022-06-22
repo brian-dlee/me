@@ -17,10 +17,11 @@ export default function InfoCard(props: Props) {
         </p>
         <p>
           I have significant and varietal professional experience in the field,
-          including: web application development and design, GeoSpatial data
-          processing, platform native audio/video streaming solutions for mobile
-          devices, autoscaling hardware-restricted applications in cloud
-          environments, and distributing systems for high scalability.
+          including: web application development and systems design, GeoSpatial data
+          processing, platform native solutions for realtime audio/video streaming,
+          production AI model integration and infrastructure, autoscaling
+          hardware-restricted applications in cloud environments, and distributing
+          systems for high scalability.
         </p>
       </Segment>
     </div>
