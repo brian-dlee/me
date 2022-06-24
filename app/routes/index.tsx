@@ -18,7 +18,7 @@ export default function Index() {
       <Lead
         avatar
         left={{ path: "/career", title: "Career" }}
-        right={{ path: "/projects", title: "Projects" }}
+        right={{ path: "/open-source", title: "Open Source" }}
       />
       <SocialMediaList />
       <InfoCard />

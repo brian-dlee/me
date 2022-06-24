@@ -2,22 +2,22 @@ import React from "react";
 import { LinksFunction } from "@remix-run/deno";
 import Container from "../components/Container";
 import globalCss from "~/styles/global.css";
-import projectsCss from "~/styles/projects.css";
+import openSourceCss from "~/styles/open-source.css";
 import Icon from "~/components/Icon";
 import Lead from "~/components/Lead";
 import Timeline, { css } from "~/components/Timeline";
 
 export const links: LinksFunction = () => [
   { href: globalCss, rel: "stylesheet" },
-  { href: projectsCss, rel: "stylesheet" },
+  { href: openSourceCss, rel: "stylesheet" },
   ...css.map((href) => ({ href, rel: "stylesheet" })),
 ];
 
-export default function Projects() {
+export default function OpenSource() {
   return (
-    <Container className="Main Projects">
+    <Container className="Main OpenSource">
       <Lead
-        title="Projects"
+        title="Open Source"
         left={{
           path: "/",
           title: (

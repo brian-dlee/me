@@ -17,7 +17,7 @@ export default function Details() {
     <Container className="Main">
       <Lead
         left={{ path: "/career", title: "Career" }}
-        right={{ path: "/projects", title: "Projects" }}
+        right={{ path: "/open-source", title: "Open Source" }}
       />
       <Outlet />
     </Container>

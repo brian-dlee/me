@@ -26,7 +26,7 @@ export default function Career() {
             </>
           ),
         }}
-        right={{ path: "/projects", title: "Projects" }}
+        right={{ path: "/open-source", title: "Open Source" }}
       />
       <Lead.Title>Career</Lead.Title>
       <Timeline
