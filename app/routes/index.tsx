@@ -6,6 +6,7 @@ import globalCss from "~/styles/global.css";
 import homeCss from "~/styles/home.css";
 import SocialMediaList from "~/components/SocialMediaList";
 import Container from "~/components/Container";
+import ActiveEmployment from "~/components/ActiveEmployment";
 
 export const links: LinksFunction = () => [
   { href: globalCss, rel: "stylesheet" },
@@ -20,6 +21,7 @@ export default function Index() {
         left={{ path: "/career", title: "Career" }}
         right={{ path: "/open-source", title: "Open Source" }}
       />
+      <ActiveEmployment />
       <SocialMediaList />
       <InfoCard />
     </Container>
