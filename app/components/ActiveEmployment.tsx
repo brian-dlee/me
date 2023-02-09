@@ -27,18 +27,18 @@ export default function ActiveEmployment(): JSX.Element {
   return (
     <ul className="ActiveEmployment">
       {items.map(({ url, title, org, icon }, i) => (
-        <React.Fragment>
-          <li key={i} className="ActiveEmployment-entry">
+        <React.Fragment key={i}>
+          <li className="ActiveEmployment-entry">
             <Icon name={icon} />
             <div className="label">
-              <span className="title">[{title}]</span>(<a
+              <a
                 className="org"
                 href={url}
                 rel="noreferrer"
                 target="_blank"
               >
-                {org}
-              </a>)
+                [{title}] {org}
+              </a>
             </div>
           </li>
           {i < items.length - 1 && (
