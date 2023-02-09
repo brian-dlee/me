@@ -7,6 +7,41 @@
   margin-top: 5em;
 }
 
+.ActiveEmployment {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+.ActiveEmployment-entry {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.ActiveEmployment-entry .title {
+  font-weight: bold;
+}
+
+.ActiveEmployment-entry a {
+  color: black;
+}
+
+.ActiveEmployment-entry .Icon, .ActiveEmployment-entry a:hover {
+  color: #9a7911;
+}
+
+.ActiveEmployment-entry > * {
+  margin-right: 1rem;
+}
+
+.ActiveEmployment-entry > *:last-child {
+  margin-right: 0;
+}
+
 .SocialMediaList {
   grid-area: social;
   text-align: center;
