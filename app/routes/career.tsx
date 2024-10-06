@@ -62,6 +62,13 @@ export default function Career() {
             end: new Date("2021-05-02"),
           },
           {
+            title: "Masters of Science for Computer Science at Vanderbilt",
+            text: "Variety of Computer Science topics including AI/ML, Distributed Systems, Advanced Networking, and Quantum Computing",
+            icon: "school-outline",
+            start: new Date("2022-09-02"),
+            end: new Date("2024-08-18"),
+          },
+          {
             title: "V.P. of Engineering at Nellis Auction",
             text:
               "Typescript, Python, GoLang, GCP: Elevate business operations and design scalable, distributable e-commerce system from the ground up to meet a growing consumer demand and volume increase",

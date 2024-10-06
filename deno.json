@@ -1,0 +1,13 @@
+{
+  "deploy": {
+    "project": "349539ff-ba2e-4f14-8437-251130aa8821",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [
+      "build",
+      "public"
+    ],
+    "entrypoint": "build/index.js"
+  }
+}
